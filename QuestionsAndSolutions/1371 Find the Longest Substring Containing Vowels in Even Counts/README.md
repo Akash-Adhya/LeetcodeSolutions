@@ -79,4 +79,20 @@ public:
 
         return maxLen;
     }
-};
+}; 
+
+## Complexity Analysis:
+
+### Time Complexity:
+    O(n): We iterate over the string s of length n exactly once. Each character in the string is processed in constant time because:
+    Updating the bitmask for the vowels is an O(1) operation.
+    Checking the map seen and updating it is also an O(1) operation due to the hash map's average case constant time complexity for insert and lookup.
+    Thus, the overall time complexity is O(n).
+
+### Space Complexity:
+    O(1) for storing the bitmask since it requires only 5 bits (one for each vowel).
+    O(min(n, 32)) for storing the map seen. In the worst case, there are at most 32 different bitmask values (since 2^5 = 32), but in practice, the space is bounded by the length of the string n.
+    Thus, the space complexity can be considered O(n) in the worst case due to the size of the map.
+
+## Conclusion
+This problem is an excellent example of using bitmasking to solve a complex substring problem in linear time. By keeping track of the state of vowel counts using a bitmask and leveraging a map to store the first occurrence of each state, we can efficiently compute the longest substring with even counts of vowels. This approach ensures that the solution runs efficiently even for the largest inputs.
