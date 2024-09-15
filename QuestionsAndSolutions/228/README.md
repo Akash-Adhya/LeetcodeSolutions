@@ -56,7 +56,7 @@ After the loop, the last range is added to the result, ensuring that any remaini
 
 ## Code Implementation
 
-###CPP
+### CPP
 
 ```cpp
 class Solution {
