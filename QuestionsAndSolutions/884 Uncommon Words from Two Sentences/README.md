@@ -77,7 +77,7 @@ print(ans)
 
 ```
 
-### Approach for the C++ Solution
+## Approach for the C++ Solution
 
 1. **Combine Sentences**:
    - The two input sentences `s1` and `s2` are concatenated with a space in between to create a single combined string.
